@@ -1,0 +1,12 @@
+-- sql 
+CREATE TABLE IF NOT EXISTS `cadastro` (
+  `id` int UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nome` varchar(255) DEFAULT NULL,
+  `identidade` varchar(255) DEFAULT NULL,
+  `telefone` varchar(255) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `senha` varchar(20) DEFAULT NULL,
+  `data_nasc` date DEFAULT NULL,
+  `sexo` varchar(90) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) 

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/criar.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fim font -->
+    <title>Criar</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h1>GOFUNDING</h1>
+        <ul>
+            <li><a  class="link" href="index.html">APOIAR</a></li>
+            <li><a  class="link" href="#">CRIAR</a></li>
+            <li><a  class="link" href="#">COMO FUNCIONA</a></li>
+            <li><a class="link"  href="#">REGISTRAR</a></li>
+            <li class="slash">/</li>
+            <li><a href="#">ENTRAR</a></li>
+            
+        </ul>
+        <div class="content-search">
+            <i class="fa-solid fa-magnifying-glass search" id="btn-search"></i>
+            <button class="menu-btn" onclick="toggleMenu()">    
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+           
+      
+        
+
+        </nav>
+            <div id="search" style="display: none;"><!--style="display: none;-->
+                <i class="fa-solid fa-magnifying-glass search st" ></i>
+                <input type="search" name="pesquisa" id="search-input"  placeholder="Pesquisar campanhas,blogs...">
+            <i class="fa-solid fa-xmark fa-xs"  id="btn-x" style="color: #63E6BE;"></i>
+            </div>
+            
+    </header>
+ 
+  <main>
+    <section class="pai">
+        <div class="img">
+            <!-- <img src="./img/comofunciona-apoiar.svg" alt=""> -->
+            <span>Criar campanha</span>
+            
+        </div>
+    </section>
+
+    <section class="founds">
+        <h1>Angariar fundos para:</h1>
+            <div class="itens">
+                <div class="item1" id="item1">
+                    <h3>Um projeto</h3>
+                    <p class="subtitle">
+                        Escolhe esta opção se tens um projeto que queres financiar.
+                    </p>
+                    <hr>
+                    <p class="txt">
+                        Se atingires (ou ultrapassares) o objetivo dentro do prazo, transferimos-te os apoios angariados.
+                    </p>
+                    <p class="txt">
+                        Se não atingires o objetivo dentro do prazo devolvemos os apoios aos teus apoiantes, livre de custos.
+                    </p>
+                </div>
+                <div class="item2" id="item2" >
+                    <h3>Uma causa</h3>
+                    <p class="subtitle">
+                        Escolhe esta opção se queres angariar fundos para uma causa solidária ou sem fins lucrativos.
+                    </p>
+                    <hr>
+                    <p class="txt">
+                        Cada apoiante escolhe se o seu apoio é condicional ou incondicional.
+                    </p>
+                    <p class="txt">
+                        Se atingires (ou ultrapassares) o objetivo dentro do prazo, transferimos-te os apoios angariados.
+                    </p>
+                    <p class="txt pb">
+                        transferimos-te os apoios angariados.
+    
+                        Se não atingires o objetivo dentro do prazo, transferimos-te os apoios incondicionais. Os apoios condicionais são devolvidos, livre de custos.
+    
+    
+                    </p>
+                </div>
+            </div>
+    
+    </section>
+
+     <section class="aboutYou">
+        <div class="container">
+            <legend>Sobre ti</legend>
+            <div class="content label">
+                <div class="form-group">
+                    <p class="lab">Nome:</p>
+                </div>
+                <div class="form-group">
+                    <p class="lab1">E-mail:</p>
+                </div>
+                <div class="form-group">
+                    <p class="lab2">Telefone:</p>
+                </div>
+            </div>
+            <div class="content">
+                   <div class="form-group">
+                        <!-- <span >Nome:</span> -->
+                    <input type="text" name="nome">
+                    <p class="help">Primeiro e último nome</p>
+                   </div>
+                
+                <div class="form-group">
+                    <!-- <span >E-mail:</span> -->
+                    <input type="email" name="email" id="email">
+                    <p class="help">Endereço de email para associar à campanha
+                    </p>
+                </div>
+                
+                <div class="form-group">
+                    <!-- <span >Telefone:</span> -->
+                    <input type="tel" name="telefone" id="">
+                    <p class="help">Exclusivamente para a nossa equipa. Não será divulgado.</p>
+                    
+                </div>
+               
+            
+                
+            </div>
+            <button class="btn about_btn">
+                Vamos Começar!
+            </button>
+        </div>
+       
+    </section> 
+     
+    
+  </main>
+
+  <footer>
+    <div class="content">
+        <div class="foot">
+            <p class="ftxt">
+               <a href="#">BackMe</a>
+            </p>
+        </div>
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fas fa-seedling"></i></a>
+        </div>
+        <div class="select">
+            <select name="linguagem" id="" class="foot-btn">
+                <optgroup>
+                    <option value="Português" selected>Português</option>
+                    <option value="Inglês">Inglês</option>
+                </optgroup>
+            </select>
+        </div>
+    </div>
+    
+  </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
